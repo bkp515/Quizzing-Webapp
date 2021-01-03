@@ -1,0 +1,55 @@
+body
+{
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+  margin: 0;
+}
+#specialBtn
+{
+  font-family: 'Staatliches', cursive;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  background-color: #01BAEF;
+  font-size: 3vw;
+  text-align: center;
+  letter-spacing: 0.2vw;
+  color: white;
+  outline: none;
+  border: 3px solid black;
+  transition: all 0.3s;
+  text-shadow: 0.1vw 0.1vw black;
+}
+#specialBtn:hover
+{
+  background-color: #5FAD56;
+  cursor: pointer;
+}
+.teamDiv
+{
+  height: 10vh;
+  width: 30vw;
+  color: white;
+  padding: 1vw;
+  text-shadow: 0.1vw 0.1vw black;
+}
+#leftTeam
+{
+  background-color: #FAA916;
+  float: left;
+  border-bottom-right-radius: 20px;
+}
+#rightTeam
+{
+  background-color: #B80C09;
+  float: right;
+  border-bottom-left-radius: 20px;
+}
+ .tName
+ {
+   float: left;
+ }
+ .points
+ {
+   float: right;
+ }
