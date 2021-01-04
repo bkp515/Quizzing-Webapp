@@ -22,8 +22,12 @@ body
 }
 #specialBtn:hover
 {
-  background-color: #5FAD56;
+  background-color: #3454D1;
   cursor: pointer;
+}
+#specialBtn:active
+{
+  border-radius: 20%;
 }
 .teamDiv
 {
@@ -53,4 +57,40 @@ body
 .points
 {
   float: right;
+}
+.homeBtn
+{
+  font-family: 'Staatliches', cursive;
+  font-size: 5vw;
+  padding: 1%;
+  border-radius: 20px;
+  background: none;
+  text-shadow: 0.1vw 0.1vw #B80C09;
+  transition: all 0.3s;
+  outline: none;
+  width: 40vw;
+  margin: 2vh;
+}
+.homeBtn:hover
+{
+  cursor: pointer;
+  text-shadow: 0.2vw 0.2vw #B80C09;
+}
+#homeBtn1
+{
+  border: 4px solid #01BAEF;
+  color: #01BAEF;
+}
+#homeBtn1:active
+{
+  border: 4px solid #5FAD56;
+}
+#homeBtn2
+{
+  border: 4px solid #FAA916;
+  color: #FAA916;
+}
+#homeBtn2:active
+{
+  border: 4px solid #5FAD56;
 }

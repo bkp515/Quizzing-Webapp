@@ -1,13 +1,7 @@
 <%- include("partials/header.ejs") %>
-  <div class="teamDiv" id="leftTeam">
-    <h2 class="tName">Team 1</h2>
-    <h2 class="points" id="teamOnePoints">Points: 0</h2>
+  <div>
+    <button class="homeBtn" id="homeBtn1" onclick="window.location='/quizzingScreen';">Host a Game</button>
+    <br>
+    <button class="homeBtn" id="homeBtn2" onclick="window.location='/quizzingScreen';">Join a Game</button>
   </div>
-  <div class="teamDiv" id="rightTeam">
-    <h2 class="tName">Team 2</h2>
-    <h2 class="points" id="teamTwoPoints">Points: 0</h2>
-  </div>
-  <button id="specialBtn">STOP</button>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="connect.js"></script>
 <%- include("partials/footer.ejs") %>

@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+  <div class="teamDiv" id="leftTeam">
+    <h2 class="tName">Team 1</h2>
+    <h2 class="points" id="teamOnePoints">Points: 0</h2>
+  </div>
+  <div class="teamDiv" id="rightTeam">
+    <h2 class="tName">Team 2</h2>
+    <h2 class="points" id="teamTwoPoints">Points: 0</h2>
+  </div>
+  <button id="specialBtn">BUZZ</button>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="connect.js"></script>
+<%- include("partials/footer.ejs") %>

@@ -4,6 +4,8 @@ const express = require("express"),
       io = require('socket.io')(http),
       bodyParser = require("body-parser");
 
+var count = 0;
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.engine('html', require('ejs').renderFile);
@@ -17,6 +19,10 @@ app.get('/', function(req, res){
   res.render('index.ejs');
 });
 
+app.get('/quizzingScreen', (req, res) => {
+  res.render('quizzingScreen.ejs');
+});
+
 io.on('connection', (socket) => {
   console.log("User Connected");
   socket.on('disconnect', () => {
@@ -25,6 +31,7 @@ io.on('connection', (socket) => {
 
   socket.on("btnPress", () => {
     console.log("nah");
-    io.emit('btnPress');
+    count++;
+    io.emit('btnPress', count);
   });
 });
