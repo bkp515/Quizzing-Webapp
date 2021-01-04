@@ -11,7 +11,7 @@ btn.addEventListener('click', function(){
   socket.emit("btnPress", "ello");
 });
 
-socket.on('btnPress', () => {
-  points1++;
+socket.on('btnPress', (count) => {
+  points1 = count;
   teamOnePoints.textContent = "Points: " + points1;
 });
